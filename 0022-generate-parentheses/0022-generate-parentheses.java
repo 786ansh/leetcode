@@ -10,11 +10,11 @@ class Solution {
            arr.add(ans);
             return ;
         }
-        if(o>n) return; 
+        if(o>n|| c>o) return; 
        
         
         paranthesis(o+1, c, n, ans+"(",arr);
-        if(c<o) paranthesis(o, c+1, n, ans+")",arr);
+       paranthesis(o, c+1, n, ans+")",arr);
     }
     
 }
